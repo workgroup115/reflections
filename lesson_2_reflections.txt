@@ -1,0 +1,9 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	Git creates a hidden directory (it starts with a "."), inside the parent directory in which 
+	the "git init" command is run, which contains metadata about the repository. These metadata are used  to keep track of what's going on the repository (the commit history), that's why It needs to be initialized. When the repository it's created no commit is done (this can be confirmed by running "git log" command in the recently created repository and the result should be an error message like this: "Fatal: bad default revision HEAD"), regardless the directory already contains files or not.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	Even though the three concepts are closely related, I see the differences among them this way:
+	The working directory is the base and the other two concepts build upon it, being the repository the upper step in the pyramid and the staging area is the middle one, serving as a "hub" or "pivot" that allows the user decides which files go to the repository from the working directory and which don't for a specific commit. 
