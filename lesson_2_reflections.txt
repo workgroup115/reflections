@@ -7,3 +7,7 @@ How is the staging area different from the working directory and the repository?
 
 	Even though the three concepts are closely related, I see the differences among them this way:
 	The working directory is the base and the other two concepts build upon it, being the repository the upper step in the pyramid and the staging area is the middle one, serving as a "hub" or "pivot" that allows the user decides which files go to the repository from the working directory and which don't for a specific commit. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	The staging area allows me "to stage" the files I want to group in a single commit, leaving the others in the working directory. This way I can commit files that relates to a logical function.
