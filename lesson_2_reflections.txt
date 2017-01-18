@@ -11,3 +11,7 @@ How is the staging area different from the working directory and the repository?
 How can you use the staging area to make sure you have one commit per logical change?
 
 	The staging area allows me "to stage" the files I want to group in a single commit, leaving the others in the working directory. This way I can commit files that relates to a logical function.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	If I want to try an experimental feature that is not taken into account in the official version I can use a branch, this way, I wouldn't mess up the master branch and still could play with the feature I have in mind. Branches are like playgrounds.
