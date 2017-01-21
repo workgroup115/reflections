@@ -19,3 +19,7 @@ What are some situations when branches would be helpful in keeping your history 
 How do the diagrams help you visualize the branch structure?
 
 	They show me the reachability of commits from my current commit in any branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The result is a ne commit that contains the changes of both branches, having the checked out branch pointing at it. This new commit could have one or two parents depending on the type of merge: fast-forward or recursive. The commits of both branches are shown chronologically in the log history. The merge of two branches has a special side effect int the diff command when comparing two commits that don't have a parent-child relationship. The diagram helps to a have a better idea of what the merge should be.
