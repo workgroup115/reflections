@@ -13,15 +13,12 @@ How can you use the staging area to make sure you have one commit per logical ch
 	The staging area allows me "to stage" the files I want to group in a single commit, leaving the others in the working directory. This way I can commit files that relates to a logical function.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
-
 	If I want to try an experimental feature that is not taken into account in the official version I can use a branch, this way, I wouldn't mess up the master branch and still could play with the feature I have in mind. Branches are like playgrounds.
 
 How do the diagrams help you visualize the branch structure?
-
 	They show me the reachability of commits from my current commit in any branch.
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
-
 	The result is one commit that contains the changes of both branches, having the checked out branch pointing at it. This new commit could have one or two parents depending on the type of merge: fast-forward or recursive. The commits of both branches are shown chronologically in the log history. The merge of two branches has a special side effect int the diff command when comparing two commits that don't have a parent-child relationship. The diagram helps to a have a better idea of what the merge should be.
 
 What are the pros and cons of Git's automatic merging vs always doing merges manually?
