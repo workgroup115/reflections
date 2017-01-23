@@ -22,4 +22,7 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-	The result is a ne commit that contains the changes of both branches, having the checked out branch pointing at it. This new commit could have one or two parents depending on the type of merge: fast-forward or recursive. The commits of both branches are shown chronologically in the log history. The merge of two branches has a special side effect int the diff command when comparing two commits that don't have a parent-child relationship. The diagram helps to a have a better idea of what the merge should be.
+	The result is one commit that contains the changes of both branches, having the checked out branch pointing at it. This new commit could have one or two parents depending on the type of merge: fast-forward or recursive. The commits of both branches are shown chronologically in the log history. The merge of two branches has a special side effect int the diff command when comparing two commits that don't have a parent-child relationship. The diagram helps to a have a better idea of what the merge should be.
+
+What are the pros and cons of Git's automatic merging vs always doing merges manually?
+	One of the pros of automatic merging is that Git gets rid of unnecessary branches comparison that otherwise should be done manually by the user and the main con is that git doesn't always know how to merge the branches.
