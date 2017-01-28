@@ -15,3 +15,6 @@ What is the benefit of having a local copy of the last known state of the remote
 How would you collaborate without using Git or Github? What would be easier and what would be harder?
 	Easier: Using a file hosting system, like dropbox.
 	Harder: Passing files via usb.	
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	When I want to propose a new feature that is not consider in the main project. If changes are merged into the master branch, each contributor in the project could get the updates more easily.
